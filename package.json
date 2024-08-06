@@ -26,6 +26,7 @@
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0",
     "node-gyp": "^10.2.0",
     "sequelize": "^6.37.3",
     "zod": "^3.23.8",
