@@ -48,8 +48,13 @@ export const initializeDatabase = async () => {
 };
 
 
-export const userSchema = z.object({
+export const userRegistrationSchema = z.object({
     username: z.string().min(5, "userName must be at least 5 characters long"),
     email: z.string().email("Invalid email address"),
     password: z.string().min(6, "password must be at least 6 characters long")
+})
+
+export const userLoginSchema = z.object({
+    email: z.string(),
+    password: z.string()
 })
